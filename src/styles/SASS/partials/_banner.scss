@@ -1,0 +1,20 @@
+.banner {
+  height: 223px;
+  margin-bottom: 40px;
+    &__img {
+      position: absolute;
+      z-index: -1;
+      margin: 0px 100px;
+      width: 1240px;
+      height: 223px;
+      object-fit: cover;
+      filter: brightness(50%);
+      border-radius: 25px;
+    }
+    &__tagline {
+      text-align: center;
+      font-size: 48px;
+      color: white;
+      padding: 80px;
+    }
+}

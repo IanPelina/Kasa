@@ -9,23 +9,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.banner .home-img {
-  position: absolute;
-  z-index: -1;
-  margin: 0px 100px;
-  width: 1240px;
-  height: 223px;
-  object-fit: cover;
-  filter: brightness(50%);
-  border-radius: 25px;
-}
-.banner .tagline {
-  text-align: center;
-  font-size: 48px;
-  color: white;
-  padding: 80px;
-}
-
 nav {
   margin: 45px 100px 50px;
   display: flex;
@@ -48,6 +31,27 @@ nav .navlinks a {
   color: #FF6060;
   text-decoration: none;
   font-size: 24px;
+}
+
+.banner {
+  height: 223px;
+  margin-bottom: 40px;
+}
+.banner__img {
+  position: absolute;
+  z-index: -1;
+  margin: 0px 100px;
+  width: 1240px;
+  height: 223px;
+  object-fit: cover;
+  filter: brightness(50%);
+  border-radius: 25px;
+}
+.banner__tagline {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  padding: 80px;
 }
 
 .cards {
@@ -102,6 +106,74 @@ nav .navlinks a {
   width: 122px;
   height: 40px;
   fill: white;
+}
+
+.accordions {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.accordion {
+  width: 1023px;
+  height: 52px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fall {
+  margin-bottom: 92px;
+}
+
+.accordion__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FF6060;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.accordion__icon {
+  position: relative;
+  width: 24px;
+  height: 13.71px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion__icon::before {
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.accordion__content {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 15px;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-40px);
+  background: #F6F6F6;
+  border-radius: 5 5 10px 10px;
+  color: #FF6060;
+}
+
+.show {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-5px);
+  position: relative;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */

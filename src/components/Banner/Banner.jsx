@@ -1,14 +1,7 @@
 import React from "react";
-import Img from "../../assets/accueil.png";
 
-export default function Banner() {
+export default function Banner({ children }) {
 
-    return (
-        <div className="banner">
-            <img className='home-img' src={Img} alt="paysage" />
-            <div>
-                <p className="tagline" >Chez vous, partout et ailleurs</p>
-            </div>
-        </div>
-    )
-}
+    return (<div className="banner">{children}</div>)
+
+  }
