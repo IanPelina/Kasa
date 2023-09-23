@@ -1,0 +1,29 @@
+@import './settings';
+
+error-page {
+    display: flex;
+    justify-content: center;
+}
+
+.error-logo {
+    display: flex;
+    justify-content: center;
+    margin: 140px 0;
+}
+
+.error-msg {
+    color: $pink;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    color: $pink;
+    text-decoration: underline $pink;
+    font-size: 18px;
+    margin-bottom: 140px;
+}

@@ -9,6 +9,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.root {
+  max-width: 1440px;
+}
+@media screen and (min-width: 1441px) {
+  .root {
+    margin: 0 auto;
+  }
+}
+
 nav {
   margin: 45px 100px 50px;
   display: flex;
@@ -36,16 +45,24 @@ nav .navlinks a {
 .banner {
   height: 223px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .banner__img {
   position: absolute;
   z-index: -1;
-  margin: 0px 100px;
   width: 1240px;
   height: 223px;
   object-fit: cover;
   filter: brightness(50%);
   border-radius: 25px;
+  margin: 0px 100px;
+}
+@media screen and (min-width: 1441px) {
+  .banner__img {
+    margin: 0 auto;
+  }
 }
 .banner__tagline {
   text-align: center;
@@ -65,6 +82,7 @@ nav .navlinks a {
 .cards .card {
   width: 340px;
   height: 340px;
+  text-decoration: none;
 }
 .cards .card img {
   width: 340px;
@@ -143,6 +161,7 @@ nav .navlinks a {
   height: 13.71px;
   margin-right: 10px;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .accordion__icon::before {
@@ -174,6 +193,34 @@ nav .navlinks a {
   transform: translateY(-5px);
   position: relative;
   z-index: -1;
+}
+
+error-page {
+  display: flex;
+  justify-content: center;
+}
+
+.error-logo {
+  display: flex;
+  justify-content: center;
+  margin: 140px 0;
+}
+
+.error-msg {
+  color: #FF6060;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  color: #FF6060;
+  text-decoration: underline #FF6060;
+  font-size: 18px;
+  margin-bottom: 140px;
 }
 
 /*# sourceMappingURL=styles.css.map */

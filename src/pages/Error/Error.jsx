@@ -1,9 +1,16 @@
 import React from "react";
+import ErrorLogo from '../../assets/404.png';
+import { Link } from "react-router-dom";
 
 export default function Error() {
     return (
-        <div>
-            <h1>404</h1>
+        <div className="error-page">
+            <div className="error-logo">
+                <img src={ErrorLogo} alt="error"/>
+            </div>
+            <p className="error-msg">Oups! La page que vous demandez n'existe pas.</p>
+            <Link className="home-link" to="/">Retourner sur la page d’accueil</Link>
+            
         </div>
     )
 }

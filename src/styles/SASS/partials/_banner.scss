@@ -1,15 +1,21 @@
 .banner {
   height: 223px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     &__img {
       position: absolute;
       z-index: -1;
-      margin: 0px 100px;
       width: 1240px;
       height: 223px;
       object-fit: cover;
       filter: brightness(50%);
       border-radius: 25px;
+      margin: 0px 100px;
+      @media screen and (min-width: 1441px) {
+        margin: 0 auto;
+      }
     }
     &__tagline {
       text-align: center;
