@@ -4,9 +4,9 @@ import AccordionLogo from '../../assets/accordion-logo.png'
 
 export default function Accordion({ title, description }) {
 
-    const [active, setactive] = useState(false);
+    const [active, setActive] = useState(false);
 
-    const toggle = () => {setactive(!active);};
+    const toggle = () => {setActive(!active);};
 
     const content =
     Array.isArray(description) === true ? (

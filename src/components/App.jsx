@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 
 export default function App() {
   return (
-    <div>
+    <div className="home-container">
         <Navbar />
         <Router />
         <Footer />

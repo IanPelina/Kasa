@@ -9,11 +9,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.root {
+@media screen and (min-width: 1441px) {
+  #root {
+    margin: 0 auto;
+  }
+}
+
+.home-container {
   max-width: 1440px;
 }
 @media screen and (min-width: 1441px) {
-  .root {
+  .home-container {
     margin: 0 auto;
   }
 }
@@ -71,29 +77,48 @@ nav .navlinks a {
   padding: 80px;
 }
 
-.cards {
+.cards-container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1441px) {
+  .cards-container {
+    margin: 0 auto;
+  }
+}
+.cards-container .cards {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  z-index: 2;
+  position: relative;
+  width: 1240px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 50px 0;
 }
-.cards .card {
+.cards-container .cards .card {
   width: 340px;
   height: 340px;
   text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px -115px 74px -8px rgba(0, 0, 0, 0.85) inset;
+  -webkit-box-shadow: 0px -115px 74px -8px rgba(0, 0, 0, 0.85) inset;
+  -moz-box-shadow: 0px -115px 74px -8px rgba(0, 0, 0, 0.85) inset;
 }
-.cards .card img {
+.cards-container .cards .card img {
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  filter: brightness(70%);
   object-fit: cover;
   z-index: -1;
   position: relative;
 }
-.cards p {
+.cards-container .cards .card h3 {
+  z-index: 2;
   margin-top: -70px;
   margin-left: 15px;
   margin-right: 15px;
