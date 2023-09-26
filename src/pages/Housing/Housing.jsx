@@ -1,10 +1,14 @@
 import React from "react";
+import Carrousel from "../../components/Carrousel/Carrousel";
+import Details from "../../components/Details/Details";
 
-export default function Profile() {
+
+export default function Housing() {
 
     return(
-        <div>
-            <h1>Vous êtes sur votre profil</h1>
+        <div className="housing">
+            <Carrousel />
+            <Details />
         </div>
     )
 

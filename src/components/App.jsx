@@ -1,14 +1,17 @@
 import React from "react";
-import Navbar from "./Navbar/Navbar";
+import Header from "./Header/Header";
 import Router from "../router/Router";
 import Footer from "./Footer/Footer";
+import Main from "./Main";
 
 export default function App() {
   return (
-    <div className="home-container">
-        <Navbar />
+    <div className="container">
+      <Header />
+      <Main>
         <Router />
-        <Footer />
+      </Main>
+      <Footer />
     </div>
   );
 }

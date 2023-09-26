@@ -7,8 +7,10 @@ export default function Home() {
     return(
         <div>
             <Banner>
-                <img className='banner__img' src={Img} alt="paysage" />
-                <p className="banner__tagline" >Chez vous, partout et ailleurs</p>
+                <div>
+                    <img className='banner__img' src={Img} alt="paysage" />
+                    <p className="banner__tagline" >Chez vous, partout et ailleurs</p>
+                </div>
             </Banner>
             <div className="cards-container">
                 <Cards />
