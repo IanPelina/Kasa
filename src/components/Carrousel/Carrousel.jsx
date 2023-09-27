@@ -28,10 +28,11 @@ export default function Carrousel({pictures}) {
     return(
         
         <div className="apartment__img">
+            {pictures.length > 1 && (
             <div className="arrows">
-                <img className="show arrow left" src={left} onClick={previousSlide}/>
-                <img className="show arrow right" src={right} onClick={nextSlide}/>
-            </div>
+                <img className="show arrow left" src={left} onClick={previousSlide} />
+                <img className="show arrow right" src={right} onClick={nextSlide} />
+            </div>)}
             {pictures.map((picture, i) => (
                 <img key={picture} src={picture} className={getClassName(i)}></img>
             ))}
