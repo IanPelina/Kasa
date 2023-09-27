@@ -8,6 +8,9 @@
     flex-direction: column;
     color: $white;
     margin-top: 50px;
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
 }
 
 .footer-p {
@@ -15,6 +18,10 @@
     margin-bottom: 30px;
     font-weight: 500;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      width:130px;
+      font-size: 12px;
+    }
   }
   
   .footer-logo {
@@ -23,4 +30,8 @@
     width: 122px;
     height: 40px;
     fill: white;
+    @media screen and (max-width: 768px) {
+      width: 122px;
+      height: 40px;
+    }
   }

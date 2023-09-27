@@ -3,16 +3,27 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin: 0 100px;
+    @media screen and (max-width: 768px) {
+        margin: 0 20px;
+    }
 }
 
 .accordion {
     width: 1023px;
     height: 52px;
     transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 768px) {
+        height: 30px;
+        border-radius: 5px;    
+    }
 }
 
 .fall {
     margin-bottom: 92px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 62px;
+    }
 }
 
 .accordion__title {
@@ -25,6 +36,9 @@
     color: white;
     font-weight: 400;
     font-size: 24px;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
     
 .accordion__icon {
@@ -34,6 +48,10 @@
     margin-right: 10px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    @media screen and (max-width: 768px) {
+        width: 16px;
+        height: 8px;
+    }
 }
 
 .accordion__icon::before {

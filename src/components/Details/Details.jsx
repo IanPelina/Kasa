@@ -1,29 +1,32 @@
 import React from "react";
-import FontAwesomeIcon from ;
+import full from "../../assets/full.png";
+import empty from "../../assets/empty.png";
 
-export default function Details() {
+
+export default function Details({logement}) {
 
     return (
-        <div className="apartment__infos">
-            <div>
-                <h1>Cozy loft on the Canal Saint-Martin</h1> 
-                <p>Paris, île de France</p>
+        <div className="apartment__infos" key={logement.id}>
+            <div className="apartment__description">
+                <h1>{logement.title}</h1> 
+                <p>{logement.location}</p>
                 <div className="apartment__tags">
-                    <div className="apartment__tag">Cozy</div>
-                    <div className="apartment__tag">Canal</div>
-                    <div className="apartment__tag">Paris 10</div>
+                    {logement.tags.map(tag => <div className="apartment__tag">{tag}</div>)}
                 </div>
             </div>
             <div className="apartment__user">
                 <div className="text-and-pics">
                     <div className="text">
-                        <p>Alexandre</p> 
-                        <p>Dumas</p>
+                        <p>{logement.host.name}</p>
+                        <p>{logement.host.surname}</p>
                     </div>
-                    <div className="pics"></div>
+                    <div className="pics">
+                        <img src={logement.host.picture} />
+                    </div>
                 </div>
                 <div className="rating">
-                    <FontAwesomeIcon icon="fa-solid fa-star" />
+                    { Array(Number(logement.rating)).fill(<div className="star"><img src={full}/></div>) }
+                    { Array(5- Number(logement.rating)).fill(<div className="star"><img src={empty}/></div>) }
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ export default function Home() {
     return(
         <div>
             <Banner>
-                <div>
+                <div className="banner-container">
                     <img className='banner__img' src={Img} alt="paysage" />
                     <p className="banner__tagline" >Chez vous, partout et ailleurs</p>
                 </div>

@@ -8,9 +8,10 @@ export default function Error() {
             <div className="error-logo">
                 <img src={ErrorLogo} alt="error"/>
             </div>
-            <p className="error-msg">Oups! La page que vous demandez n'existe pas.</p>
-            <Link className="home-link" to="/">Retourner sur la page d’accueil</Link>
-            
+            <div className="error-and-link">
+                <p className="error-msg">Oups! La page que vous demandez n'existe pas.</p>
+                <Link className="home-link" to="/">Retourner sur la page d’accueil</Link>
+            </div>
         </div>
     )
 }

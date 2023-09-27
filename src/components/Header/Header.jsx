@@ -9,7 +9,7 @@ export default function Navbar() {
                 <img src={Logo} alt="kasa-logo" />
                 <div className="navlinks">
                     <Link to="/" >Accueil</Link>
-                    <Link to="/apropos" >A propos</Link>
+                    <Link className="about" to="/apropos" >A propos</Link>
                 </div>
             </nav>
         </header>

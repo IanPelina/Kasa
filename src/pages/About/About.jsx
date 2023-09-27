@@ -9,7 +9,7 @@ export default function Apropos() {
         <div> 
             <div>
                 <Banner>
-                    <img className='banner__img' src={Img} alt="paysage" />
+                    <img className='banner__img about-img' src={Img} alt="paysage" />
                 </Banner>
             </div>
             <div className="accordions">
