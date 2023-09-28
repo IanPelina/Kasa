@@ -134,6 +134,8 @@
                 gap: 5px;
             }
             .star {
+                width: 24px;
+                height: 24px;
                 @media screen and (max-width: 768px) {
                     width: 13px;
                     height: 13px;
@@ -151,12 +153,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 25px 100px 0;
+    margin: 0 100px 50px;
     gap: 85px;
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        margin: 0 20px -30px;
-        gap: 0;
+        margin: 0 20px;
+        gap: 20px;
+    }
+    .housing-fall {
+        height: 100%;
+    }
+    .housing-fall .housing-accordion {
+        height: 100%;
     }
     .housing-accordion {
         width: 100%;
@@ -164,9 +172,7 @@
         transition: all 0.3s ease-in-out;
         @media screen and (max-width: 768px) {
             width: 100%;
-        }
-        .housing-fall .housing-accordion{
-            padding-bottom: 200px;
+            height: 100%;
         }
         &__title{
             display: flex;
@@ -178,17 +184,20 @@
             color: white;
             font-weight: 400;
             font-size: 24px;
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+                padding: 6px;
+            }
         }
         &__content {
             visibility: hidden;
             height: 0;
             opacity: 0;
             overflow: hidden;
-            padding: 15px;
             transition: all .4s ease-in-out;
             transform: translateY(-40px);
             background: #F6F6F6 ;
-            border-radius: 5 5 10px 10px;
+            border-radius: 0 0 10px 10px;
             color: #FF6060;
         }
         .show {
@@ -198,6 +207,8 @@
             transform: translateY(-5px);
             position: relative;
             z-index: -1;
+            overflow: visible;
+            padding: 10px;
         }
     }
 }

@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 0 100px;
+    margin: 0 100px 30px;
     @media screen and (max-width: 768px) {
         margin: 0 20px;
     }
@@ -14,16 +14,13 @@
     height: 52px;
     transition: all 0.3s ease-in-out;
     @media screen and (max-width: 768px) {
-        height: 30px;
         border-radius: 5px;    
+        height: 30px;
     }
 }
 
 .fall {
-    margin-bottom: 92px;
-    @media screen and (max-width: 768px) {
-        margin-bottom: 62px;
-    }
+    height: fit-content;
 }
 
 .accordion__title {
@@ -72,15 +69,16 @@
     transition: all .4s ease-in-out;
     transform: translateY(-40px);
     background: #F6F6F6 ;
-    border-radius: 5 5 10px 10px;
+    border-radius: 0 0 10px 10px;
     color: #FF6060;
 }
 
-.show {
+.accordion-show {
+    z-index: -1;
     height: 100%;
     opacity: 1;
     visibility: visible;
     transform: translateY(-5px);
     position: relative;
-    z-index: -1;
+    overflow: visible;
 }
