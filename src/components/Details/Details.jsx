@@ -6,7 +6,7 @@ import empty from "../../assets/empty.png";
 export default function Details({logement}) {
 
     return (
-        <div className="apartment__infos" key={logement.id}>
+        <div className="apartment__infos">
             <div className="apartment__description">
                 <h1>{logement.title}</h1> 
                 <p>{logement.location}</p>
@@ -21,12 +21,12 @@ export default function Details({logement}) {
                         <p>{logement.host.surname}</p>
                     </div>
                     <div className="pics">
-                        <img src={logement.host.picture} />
+                        <img alt="img" src={logement.host.picture} />
                     </div>
                 </div>
                 <div className="rating">
-                    { Array(Number(logement.rating)).fill(<div className="star"><img src={full}/></div>) }
-                    { Array(5- Number(logement.rating)).fill(<div className="star"><img src={empty}/></div>) }
+                    { Array(Number(logement.rating)).fill(<div className="star"><img alt="img" src={full}/></div>) }
+                    { Array(5- Number(logement.rating)).fill(<div className="star"><img alt="img" src={empty}/></div>) }
                 </div>
             </div>
         </div>
