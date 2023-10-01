@@ -20,9 +20,13 @@ export default function Accordion({ title, description }) {
     );
  
     return (
-            <div className={`accordion ${active ? "fall" : ""}`}>
-                <div className="accordion__title" key={Accordion.id} onClick={toggle}>{title}<img className={`accordion__icon ${active ? "rotate" : ""}`} src={AccordionLogo} alt="arrow" /></div>
-                <div className={`accordion__content ${active ? "accordion-show" : ""}`}>{content}</div>
-            </div>
+      <div className={`accordion ${active ? "fall" : ""}`}>
+        <div className="accordion__title" key={Accordion.id} onClick={toggle}>
+          {title}<img className={`accordion__icon ${active ? "rotate" : ""}`} src={AccordionLogo} alt="arrow" />
+        </div>
+        <div className={`accordion__content ${active ? "accordion-show" : ""}`}>
+          {content}
+        </div>
+      </div>
     )
 }

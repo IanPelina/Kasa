@@ -20,9 +20,13 @@ export default function Collapse({ title, description }) {
     );
  
     return (
-            <div className={`housing-accordion ${active ? "housing-fall" : ""}`}>
-                <div className="housing-accordion__title" onClick={toggle}>{title}<img className={`accordion__icon ${active ? "rotate" : ""}`} src={AccordionLogo} alt="arrow" /></div>
-                <div className={`housing-accordion__content ${active ? "show" : ""}`}>{content}</div>
-            </div>
+      <div className={`housing-accordion ${active ? "housing-fall" : ""}`}>
+        <div className="housing-accordion__title" onClick={toggle}>
+          {title}<img className={`accordion__icon ${active ? "rotate" : ""}`} src={AccordionLogo} alt="arrow" />
+        </div>
+        <div className={`housing-accordion__content ${active ? "show" : ""}`}>
+          {content}
+        </div>
+      </div>
     )
 }
