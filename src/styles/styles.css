@@ -432,6 +432,7 @@ error-page {
   justify-content: space-between;
   margin: 0 100px;
   color: #FF6060;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .apartment__infos {
@@ -515,7 +516,7 @@ error-page {
   border-radius: 100px;
 }
 .apartment__infos .apartment__user .rating {
-  margin: 27px 0;
+  margin: 27px 0 0;
   display: flex;
   gap: 10px;
 }

@@ -30,8 +30,8 @@ export default function Housing() {
         <Carrousel pictures={logement.pictures} />
         <Details logement={logement}  />
         <div className="housing-accordions">
-            <Collapse title="Description" description={logement.description} />
-            <Collapse title="Équipements" description={logement.equipments} />
+          <Collapse title="Description" description={logement.description} />
+          <Collapse title="Équipements" description={logement.equipments} />
         </div>
     </div>
   );

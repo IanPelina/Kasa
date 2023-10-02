@@ -11,7 +11,7 @@ export default function Details({logement}) {
                 <h1>{logement.title}</h1> 
                 <p>{logement.location}</p>
                 <div className="apartment__tags">
-                    {logement.tags.map(tag => <div className="apartment__tag">{tag}</div>)}
+                    {logement.tags.map((tag, index) => <div className="apartment__tag" key={index}>{tag}</div>)}
                 </div>
             </div>
             <div className="apartment__user">
@@ -25,8 +25,8 @@ export default function Details({logement}) {
                     </div>
                 </div>
                 <div className="rating">
-                    { Array(Number(logement.rating)).fill(<div className="star"><img alt="img" src={full}/></div>) }
-                    { Array(5- Number(logement.rating)).fill(<div className="star"><img alt="img" src={empty}/></div>) }
+                    { [...Array(Number(logement.rating))].map((_, i) => <div className="star" key={`full_${i}`}><img alt="img" src={full}/></div> )}
+                    { [...Array(5 - Number(logement.rating))].map((_, i) => <div className="star" key={`empty_${i}`}><img alt="img" src={empty}/></div> )}
                 </div>
             </div>
         </div>
