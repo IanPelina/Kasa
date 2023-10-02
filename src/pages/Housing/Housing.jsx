@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Collapse from "../../components/Collapse/Collapse";
+import Accordions from "../../components/Accordion/Accordions";
+
 
 import logements from "../../data/logements.json"
 
@@ -27,12 +28,12 @@ export default function Housing() {
 
   return (
     <div className="housing">
-        <Carrousel pictures={logement.pictures} />
-        <Details logement={logement}  />
-        <div className="housing-accordions">
-          <Collapse title="Description" description={logement.description} />
-          <Collapse title="Équipements" description={logement.equipments} />
-        </div>
+      <Carrousel pictures={logement.pictures} />
+      <Details logement={logement} />
+      <div className="housing-accordions">
+        <Accordions title="Description" description={logement.description} />
+        <Accordions title="Équipements" description={logement.equipments} />
+      </div>
     </div>
   );
 

@@ -1,3 +1,5 @@
+@import './settings';
+
 .accordions {
     justify-content: center;
     display: flex;
@@ -10,12 +12,13 @@
 }
 
 .accordion {
-    width: 1023px;
+    width: 80%;
     height: 52px;
     transition: all 0.3s ease-in-out;
     @media screen and (max-width: 768px) {
         border-radius: 5px;    
         height: 30px;
+        width: 100%;
     }
 }
 
@@ -81,4 +84,17 @@
     transform: translateY(-5px);
     position: relative;
     overflow: visible;
+}
+
+.housing-accordions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px 50px;
+    gap: 85px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 0 20px;
+        gap: 20px;
+    }
 }

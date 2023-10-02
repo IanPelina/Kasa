@@ -6,7 +6,7 @@ import AccordionData from '../../data/accordion.json';
 
 export default function Apropos() {
     return(
-        <div> 
+        <div className="about-container"> 
             <div>
                 <Banner>
                     <img className='banner__img about-img' src={Img} alt="paysage" />
