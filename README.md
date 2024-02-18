@@ -1,5 +1,4 @@
 # Kasa
-## 8ème projet de la formation
 
 ![image](https://stephane-lieumont.fr/static/media/oc-kasa-fromation-2021_project.857a7b9ac8bea6f78977.jpg)
 
